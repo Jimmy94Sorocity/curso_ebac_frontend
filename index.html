@@ -1,193 +1,99 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu portal de notícias</title>
-    <link rel="stylesheet" href="./main.css" />
+    <title>Game Shop - A sua loja de games</title>
+    <link rel="stylesheet" href="./main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Meu portal de notícias</h1>
+            <h1>GAME SHOP</h1>
             <nav>
                 <ul>
                     <li>
-                        <a href="#sports" title="Ir para a seção de esportes">Esportes</a>
+                        <a href="#about">Sobre a loja</a>
                     </li>
                     <li>
-                        <a href="#economy" title="Ir para a seção de notícias">Economia</a>
-                    </li>
-                    <li>
-                        <a href="#tecnology" title="Ir para a seção de Tecnologia">Tecnologia</a>
-                    </li>
-                    <li>
-                        <a href="#entertainment" title="Ir para a seção de Entreterimento">Entreterimento</a>
+                        <a href="#contact">Contato</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
-    <section id="sports">
+    <section id="about">
         <div class="container">
-            <h2>Esportes</h2>
-            <div class="articles">
-                <article>
-                    <img src="./imagens/futebol.jpg" alt="Bola de futebol no gramado" />
-                    <header>
-                        <time class="creation-date">02/09/2023 às 21:35</time>
-                    </header>
-                    <h3>Grande clássico na noite de hoje</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-                <article>
-                    <img src="./imagens/futebol-americano.jpg" alt="Jogador de futebol americano correndo com a bola na mão" />
-                    <header>
-                        <time>02/09/2023 às 21:35</time>
-                    </header>
-                    <h3>Noite do Superbowl</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-                <article>
-                    <img src="./imagens/basquete.jpg" title="Vista aérea de uma quadra de basquete" />
-                    <header>
-                        <time>02/09/2023 às 21:35</time>
-                    </header>
-                    <h3>Notícia sobre a NBA</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
+            <img class="store-front" src="./images/loja.jpg" alt="Fachada da loja Game Shop" />
+            <div>
+                <h2>Sobre a loja</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis excepturi eius, ipsa recusandae neque, molestiae, corrupti cumque aspernatur soluta itaque illo. Saepe, enim explicabo dignissimos commodi molestiae libero. Voluptates, vitae?
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam tenetur itaque repellat magni qui! Cum, ab officia explicabo dolorem sunt necessitatibus saepe ex, tempora architecto consectetur rem eveniet perferendis accusantium.
+                </p>
+                <ul class="brands-list">
+                    <li><img src="./images/nintendo.png" alt="Nintendo" /></li>
+                    <li><img src="./images/xbox.png" alt="Xbox" /></li>
+                    <li><img src="./images/playstation.png" alt="PlayStation" /></li>
+                </ul>
             </div>
         </div>
     </section>
-    <section id="economy">
+    <section id="contact">
         <div class="container">
-            <h2>Economia</h2>
-            <div class="articles">
-                <article>
-                    <img src="./imagens/dolares.jpg" alt="Muitos dólares" />
-                    <header>
-                        <time>02/09/2023 às 21:35</time>
-                    </header>
-                    <h3>Dólar em alta de 0.50%</h3>
+            <h2>Contato</h2>
+            <div class="contact-methods">
+                <div>
+                    <h3>Fale conosco</h3>
+                    <form>
+                        <input type="text" placeholder="Seu nome" required />
+                        <input type="email" placeholder="Seu e-mail" required />
+                        <input type="tel" placeholder="Seu telefone (opcional)" />
+                        <textarea placeholder="Sua mensagem" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+                <div>
+                    <h3>Nos acompanhe</h3>
+                    <ul class="social-links">
+                        <li>
+                            <a href="#" title="Siga-nos no Instagram">
+                                <img src="./images/instagram.png" alt="Logo do Instagram" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Siga-nos no Facebook">
+                                <img src="./images/facebook.png" alt="Logo do Facebook" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Visite nosso canal no Youtube">
+                                <img src="./images/youtube.png" alt="Logo do Youtube" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Venha até nós</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
+                        Rua JavaScript n° 124, Vila Html - São Paulo - SP
                     </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-                <article>
-                    <img src="./imagens/euro.jpg" alt="Várias notas de euro" />
-                    <header>
-                        <time>02/09/2023 às 21:35</time>
-                    </header>
-                    <h3>Euro em queda de 0.40%</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-                <article>
-                    <img src="./imagens/petroleo.jpg" alt="Extração de petróleo" />
-                    <header>
-                        <time>02/09/2023 às 12:35</time>
-                    </header>
-                    <h3>Alta no preço do barril do petróleo</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
+                </div>
             </div>
         </div>
     </section>
-    <section id="tecnology">
+    <footer>
         <div class="container">
-            <h2>Tecnologia</h2>
-            <div class="articles">
-                <article>
-                    <img src="./imagens/iphone.jpg" alt="Iphones em sequência" />
-                    <header>
-                        <time class="creation-date">02/09/2023 às 21:35</time>
-                    </header>
-                    <h3>Apple anuncia novo Iphone para final do ano</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-                <article>
-                    <img src="./imagens/chatgpt.jpg" alt="Imagem do logo do ChatGPT" />
-                    <header>
-                        <time>02/09/2023 às 21:35</time>
-                    </header>
-                    <h3>IAs tomam conta do mundo! Saiba como usar o ChatGPT!</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-                <article>
-                    <img src="./imagens/instagram.jpg" title="Celular com o aplicativo do Instagram" />
-                    <header>
-                        <time>02/09/2023 às 21:35</time>
-                    </header>
-                    <h3>Instagram bate recorde de usuários</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-            </div>
+            <p>
+                &copy; Game Shop - Todos os direitos reservados - 2023
+            </p>
         </div>
-    </section>
-    <section id="entertainment">
-        <div class="container">
-            <h2>Entreterimento</h2>
-            <div class="articles">
-                <article>
-                    <img src="./imagens/beyonce.jpg" alt="Beyoncê cantando" />
-                    <header>
-                        <time class="creation-date">02/09/2023 às 21:35</time>
-                    </header>
-                    <h3>Show histórico de Beyoncê em NY</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-                <article>
-                    <img src="./imagens/metgala.jpg" alt="Imagens de famosos no tapete vermelho" />
-                    <header>
-                        <time>02/09/2023 às 21:35</time>
-                    </header>
-                    <h3>Grande festa do MET GALA 2023</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-                <article>
-                    <img src="./imagens/barbie.jpg" title="Cartaz do filme da Barbie" />
-                    <header>
-                        <time>02/09/2023 às 21:35</time>
-                    </header>
-                    <h3>Super estreia de Barbie</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-            </div>
-        </div>
-    </section>
+    </footer>
 </body>
 </html>
