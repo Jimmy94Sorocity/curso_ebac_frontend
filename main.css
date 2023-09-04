@@ -1,122 +1,144 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body > header {
-    background-color: red;
+header,
+section h2,
+section h3,
+form button { /*adicionando fontes externas nos títulos e cabeçalho e alterando seu peso*/
+    font-family: 'Bungee', cursive;
+    font-weight: normal;
+}
+
+body, 
+input,
+textarea { /*adicionando fonte externa no corpo de texto*/
+    font-family: 'Roboto', sans-serif;
+}
+
+header { /*nome landing page*/
     padding: 16px 0;
-    color:aliceblue;
+    background-color: #182C61;
+    color: #ecf0f1;
 }
 
-header .container {
+header nav li { /* cabeçalho links*/
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+header nav li a { /* cabeçalho links a*/
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.container { /*ajuste para centralizar o cabeçalho*/
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container,
+section .container { /*ajuste dos links cabeçalho e da seção sobre*/
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-header li {
+.brands-list img { /*ajuste dos logos*/
+    height: 24px;
+}
+
+.brands-list li { /*colocando os logos lado a lado e adicionando margem*/
     display: inline;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    margin-left: 16px;
+    margin-right: 8px;
 }
 
-header li a {
-    color:aliceblue;
-    text-decoration: none;
+section .container { /*ajuste de seção sobre*/
+    align-items: flex-start;
 }
 
-.container {
-    width: 1366px;
-    margin: 0 auto;
+section { /*ajuste espaçamento sobre*/
+    padding: 24px 0;
 }
 
-.articles {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.articles article img {
-    /* height: 180px; */
-    width: 100%;
-}
-
-.articles article {
-    width: 30%;
-}
-
-section {
-    padding: 16px 0;
-}
-
-section h2,
-.articles article {
+section h2 { /*colocando margem no h2*/
     margin-bottom: 16px;
 }
 
-.articles article h3 {
-    margin-top: 8px;
+section { /*adicionando cor na seção sobre*/
+    color: #182C61;
+}
+
+section p { /*margem do paragráfo*/
     margin-bottom: 8px;
 }
 
-.articles article a {
-    background-color: blue;
-    color: #fff;
-    padding: 8px;
-    display: inline-block;
+.store-front { /*margem na imagem da frente de loja*/
+    margin-right: 32px;
+}
+
+.social-links img { /*definindo altura dos logos social media*/
+    height: 24px;
+}
+
+.social-links li { /*colocando os logos de social media lado a lado e adicionando margem*/
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a { /*retirando a linha dos links de social*/
     text-decoration: none;
-    font-weight: bold;
-    margin-top: 8px;
 }
 
-.articles article a:hover {
-    text-decoration: underline;
+#contact .container { /*ajustando a seção para ficar abaixo do fale conosco*/
+    display: block;
 }
 
-.articles article p,
-.articles article a {
-    font-family: Arial, Helvetica, sans-serif;
+.contact-methods { /*colocando as divs uma do lado da outra e add espaçamento entre elas*/
+    display: flex;
+    justify-content: space-between;
 }
 
-.articles article h3 {
-    font-size: 24px;
+form input,
+form textarea,
+form button { /*Ajustando os campos do formulário*/
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
 }
 
-section h2 {
-    font-size: 32px;
+form textarea { /*tirando a possibilidade de redimensionar o textarea do usuário*/
+    resize: none;
+    height: 180px;
 }
 
-#sports {
-    background-color: rgba(0, 255, 0, 0.1);
+section h3 { /*colocando margem inferior no h3*/
+    margin-bottom: 16px;
 }
 
-#sports .articles article a {
-    background-color: #009432;
+form button { /*alterando a cor de fundo e do botão e retirando a borda e colocando novo formato de seta*/
+    background-color: #182C61;
+    color: #ecf0f1;
+    border: none;
+    cursor: pointer;
 }
 
-#economy {
-    background-color: #f8f59f;
+form button:hover { /*colocando estilo para mudar de cor quando o usuário colocar a seta em cima do botão*/
+    background-color: #3052b1;
 }
 
-#economy .articles article a {
-    background-color: orange;
+input:focus,
+textarea:focus { /*colocando cor no entorno dos formulários*/
+    outline-color: #182C61;
 }
 
-#tecnology {
-    background-color: aqua;
-}
-
-#tecnology .articles article a {
-    background-color: coral;
-}
-
-#entertainment {
-    background-color: mediumslateblue;
-}
-
-#entertainment .articles article a {
-    background-color: salmon;
+footer { /*adicionando cor de fundo e nas letras do rodapé e também espaçamento*/
+    background-color: #182C61;
+    color: #ecf0f1;
+    padding: 16px 0;
 }
