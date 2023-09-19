@@ -1,0 +1,14 @@
+h1 {
+    margin: 26px 0;
+    justify-content: center;
+    display: flex;
+    font-style: italic;
+}
+
+.container button {
+    margin-top: 26px;
+}
+
+.container .form-label {
+    margin-top: 12px;
+}
